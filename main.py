@@ -1,5 +1,3 @@
-from enum import nonmember
-
 from flask import Flask, render_template, request
 import requests
 
@@ -23,13 +21,4 @@ def get_weather(city):
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-#    if data['cod'] != '404':
-#        main = data['main']
-#        temperature = main['temp']
-#        humidity = main['humidity']
-#        weather_desc = data['weather'][0]['description']
-#        return temperature, humidity, weather_desc
-#    else:
-#        return None
 
